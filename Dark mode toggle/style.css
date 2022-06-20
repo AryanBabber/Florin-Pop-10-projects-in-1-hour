@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 5rem;
+    flex-direction: column;
+    transition: background 0.3s linear,
+    color 0.3s linear;
+}
+
+body.dark{
+    background-color: #1f1f1f;
+    color: #fff;
+    transition: background 0.3s linear,
+    color 0.3s linear;
+}
+
+.toggle-cont{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+label{
+    user-select: none;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #fff;
+    transition: background 0.3s linear,
+    color 0.3s linear;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+body.dark label{
+    background-color: rebeccapurple;
+}
+
+input{
+    visibility: hidden;
+}

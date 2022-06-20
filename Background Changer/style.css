@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button {
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+    transition: transform 3.5s ease-in-out;
+    font-size: 1.25rem;
+}
+
+button:focus{
+    outline: none;
+}
+button:active{
+    box-shadow: 0;
+    transform: translate(2px,2px);
+}

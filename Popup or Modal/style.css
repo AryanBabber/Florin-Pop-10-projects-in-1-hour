@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button{
+    background-color: royalblue;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 1rem;
+}
+
+.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container.active{
+    display: flex;
+}
+
+.popup{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+    width: 550px;
+}
+
+#close{
+    background-color: #fff;
+    color: royalblue;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
